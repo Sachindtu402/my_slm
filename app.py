@@ -41,10 +41,13 @@ st.markdown("""
 ### 🧸 Kids Story Chatbot  
 This chatbot is designed for children to generate simple and fun stories.
 """)
+temperature = st.sidebar.slider(
+    "Temperature", 0.1, 1.5, 0.7, key="temperature_slider"
+)
 
-temperature = st.sidebar.slider("Temperature", 0.1, 1.5, 0.7)
-max_tokens = st.sidebar.slider("Max Tokens", 20, 200, 80)
-
+max_tokens = st.sidebar.slider(
+    "Max Tokens", 20, 200, 80, key="max_tokens_slider"
+)
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
