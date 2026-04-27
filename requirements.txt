@@ -1,0 +1,11 @@
+#backend
+fastapi
+uvicorn
+torch
+tiktoken
+huggingface_hub
+python-dotenv
+pydantic
+#frontend
+streamlit
+requests
