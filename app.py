@@ -75,7 +75,7 @@ if user_input:
 
     st.session_state.messages.append({"role": "assistant", "content": reply})
 
-```python
+# ```python
 import streamlit as st
 import torch
 import json
